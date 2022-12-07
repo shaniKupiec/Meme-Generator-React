@@ -1,7 +1,7 @@
 .main {
     background-color: white;
     padding-top: 36px;
-    form {
+    &__form {
         @include flex();
         width: inherit;
         flex-wrap: wrap;
@@ -29,5 +29,9 @@
             border-radius: 5px;
             border: 0;
         }
+    }
+
+    &__img{
+        width: 477px;
     }
 }
