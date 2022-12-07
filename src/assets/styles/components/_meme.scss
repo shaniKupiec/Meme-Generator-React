@@ -1,0 +1,33 @@
+.main {
+    background-color: white;
+    padding-top: 36px;
+    form {
+        @include flex();
+        width: inherit;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        input {
+            width: 230px;
+            height: 35px;
+            padding: 0;
+            padding-inline-start: 11px;
+            border: 1px solid #d5d4d8;
+            border-radius: 5px;
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button {
+            width: 477px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+            border-radius: 5px;
+            border: 0;
+        }
+    }
+}
