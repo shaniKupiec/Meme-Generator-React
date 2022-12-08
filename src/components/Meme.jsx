@@ -4,8 +4,8 @@ import getRandomInt from "../services/helpers";
 
 function Meme() {
   const [meme, setMeme] = useState({
-    topText: "",
-    bottomText: "",
+    topText: "top txt",
+    bottomText: "bottom txt",
     randomImage: "http://i.imgflip.com/1bij.jpg",
   });
   const [allMemeImages, setAllMemeImages] = useState(memsData);
@@ -21,11 +21,14 @@ function Meme() {
     <main className="main">
       <section className="main__form">
         <input type="text" placeholder="Top Text" />
-        {/* value={meme.topText} */}
         <input type="text" placeholder="Bottom Text" />
         <button onClick={getRandomMeme}>Get a new meme image 🖼️</button>
       </section>
-      <img src={meme.randomImage} className="main__img" alt="" />
+      <section className="main__meme">
+        <img src={meme.randomImage} className="main__meme__img" alt="" />
+        <div className="main__meme__topTxt">{meme.topText}</div>
+        <div className="main__meme__bottomTxt">{meme.bottomText}</div>
+      </section>
     </main>
   );
 }

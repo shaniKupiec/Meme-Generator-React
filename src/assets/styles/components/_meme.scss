@@ -1,6 +1,9 @@
 .main {
     background-color: white;
-    padding-top: 36px;
+    padding: 36px 0;
+    @include flex(column);
+    gap: 36px;
+
     &__form {
         @include flex();
         width: inherit;
@@ -31,7 +34,28 @@
         }
     }
 
-    &__img{
+    &__meme {
         width: 477px;
+        position: relative;
+        &__img {
+        }
+        div {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 900;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000,
+                0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+        }
+        &__topTxt {
+            top: 16px;
+        }
+        &__bottomTxt {
+            bottom: 16px;
+        }
     }
 }
