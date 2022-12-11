@@ -1,4 +1,4 @@
-# About-Me-React
-project number 1 in scrimba react course
+# Meme Generator React
+project number 4 in scrimba react course
 
-<p><a href="https://silver-chimera-ebe747.netlify.app/" target="blank">link to view page</a> </p>
+<p><a href="https://adorable-centaur-f35c5e.netlify.app/" target="blank">link to view page</a> </p>
